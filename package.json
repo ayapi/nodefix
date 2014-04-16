@@ -1,23 +1,22 @@
 {
-	"name": "fix",
-	"description": "FIX Protocol library",
-	"version": "0.0.8",
-	"homepage": "https://github.com/falconair/nodefix",
-	"author": "Shahbaz Chaudhary <shahbazc@gmail.com>",
-	"main": "fix",
-	"directories": {
-		"handlers": "./handlers"
-	},
-	"dependencies": {
-		"pipe": "0.0.2",
-		"underscore": "1.1.6",
-		"underscore.string": "1.1.4"
-	},
-	"engines": {
-		"node": ">=0.4.8"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/falconair/nodefix.git"
-	}
+  "name": "fix",
+  "description": "FIX Protocol library",
+  "version": "0.0.8",
+  "homepage": "https://github.com/the4thdimension/nodefix",
+  "author": "Shahbaz Chaudhary <shahbazc@gmail.com>",
+  "main": "fix",
+  "directories": {
+    "handlers": "./handlers"
+  },
+  "dependencies": {
+    "pipe": "~1.0.0",
+    "lodash": "~2.4.1"
+  },
+  "engines": {
+    "node": ">=0.10.26"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/the4thdimension/nodefix.git"
+  }
 }

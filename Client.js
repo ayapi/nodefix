@@ -2,7 +2,6 @@ var util = require('util');
 var fs = require('fs');
 var net = require('net');
 var events = require('events');
-var _ = require('underscore');
 
 var OutgoingMessage = require("./Messages/OutgoingMessage");
 var IncomingMessage = require("./Messages/IncomingMessage");

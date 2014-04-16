@@ -1,6 +1,6 @@
 var events = require("events");
 var fs = require("fs");
-var _ = require("underscore");
+var _ = require("lodash");
 var OutgoingMessage = require("./Messages/OutgoingMessage");
 
 /**

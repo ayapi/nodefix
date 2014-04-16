@@ -1,4 +1,4 @@
-var _ = require("underscore");
+var _ = require("lodash");
 var map = require("../map");
 
 function Message() {}
@@ -23,8 +23,9 @@ Message.prototype.get = function (field) {
 	}
 	else
 	{
-		rawValue.forEach(function (rawValue) {
-			arr.push(map.get(field, rawValue));
+		_.forEach(rawValue, function(val){
+
+			arr.push(map.get(field, val));
 		});
 
 		return arr;
@@ -58,6 +59,7 @@ Message.prototype.getKey = function (field) {
 
 // Second argument can be an array of field names or a single field name
 Message.prototype.getRepeating = function (keyField, fields) {
+	
 	var keys = this.get(keyField),
 		data = {},
 		obj = {};
@@ -68,11 +70,14 @@ Message.prototype.getRepeating = function (keyField, fields) {
 	}
 	else
 	{
-		fields.forEach(function (field) {
+		_.forEach(fields, function(field){
+			
 			data[field] = this.get(field);
-		}.bind(this));
+		});
 	}
-	keys.forEach(function (key, index) {
+
+	_.forEach(keys, function(key, index){
+
 		obj[key] = {};
 		for (var field in data)
 		{
@@ -89,6 +94,7 @@ Message.prototype.getRepeating = function (keyField, fields) {
 			}
 		}
 	});
+
 	return obj;
 };
 
