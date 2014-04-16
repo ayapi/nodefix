@@ -1,15 +1,20 @@
 exports.getField = function (key) {
+	
 	var field = fields[key];
+	
 	if (!field)
 	{
 		console.log("[ERROR] Field not mapped:", key);
 		return null;
 	}
+	
 	return field;
 };
 
 exports.get = function (field, value) {
+	
 	var val;
+	
 	if (values[field])
 	{
 		val = values[field][value];
@@ -20,11 +25,13 @@ exports.get = function (field, value) {
 		}
 		return val;
 	}
+	
 	// TODO should error here once we've mapped all values
 	return value;
 };
 
 exports.getKey = function (field, value) {
+	
 	for (var raw in values[field])
 	{
 		if (values[field][raw] === value)
@@ -32,6 +39,7 @@ exports.getKey = function (field, value) {
 			return raw;
 		}
 	}
+
 	// TODO should error here once we've mapped all values
 	return value;
 };
@@ -2072,7 +2080,6 @@ exports.keys = {
 	"RecoverytelegramDate": "5211",
 	"RecoverytelegramTime": "5212"
 };
-
 
 var values = exports.values = {
 	// 35
