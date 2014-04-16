@@ -1,12 +1,14 @@
 An implementation of the [FIX protocol (Financial Information Exchange)](http://en.wikipedia.org/wiki/Financial_Information_eXchange).
 
+Forked from [nodefix by falconair](https://github.com/falconair/nodefix)
+
 Currently the implementation is pre-beta.
 
 
 Install
 ====
 
-    npm install nodefix
+SOON
 
 API
 ===
@@ -77,6 +79,7 @@ client.on("outgoing", function (message) {
 Not yet supported
 ===========
 
+* Multi-version messaging
 * Encryption
 
 
@@ -84,25 +87,3 @@ Known errors
 ===========
 
 * Make sure ./traffic directory exists
-
-License
-=======
-Copyright (C) 2011 by Shahbaz Chaudhary
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
