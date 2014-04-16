@@ -36,10 +36,12 @@ Message.prototype.getKey = function (field) {
 
 	// TODO for performance could include logic to quickly return value if known not to be a repeating group field (header, etc)
 	var arr = _.reduce(this.data, function (memo, item) {
+		
 		if (item[0] === field)
 		{
 			memo.push(item[1]);
 		}
+		
 		return memo;
 	}, []);
 
@@ -79,6 +81,7 @@ Message.prototype.getRepeating = function (keyField, fields) {
 	_.forEach(keys, function(key, index){
 
 		obj[key] = {};
+
 		for (var field in data)
 		{
 			if (typeof fields === "string")

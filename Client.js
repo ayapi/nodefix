@@ -26,7 +26,9 @@ var Session = require("./Session");
  */
 
 function Client(settings) {
+	
 	this.settings = settings;
+	
 	this.connect();
 }
 
@@ -36,6 +38,7 @@ Client.prototype = new events.EventEmitter();
  * @public
  */
 Client.prototype.connect = function () {
+	
 	this.stream = net.createConnection(this.settings.port, this.settings.host);
 	this.buffer = new Buffer();
 	this.session = new Session(this.settings);
@@ -59,6 +62,7 @@ Client.prototype.connect = function () {
  * @param  {[type]} password
  */
 Client.prototype.logon = function (username, password) {
+	
 	this.send("Logon", [
 		["EncryptMethod", "0"],
 		["HeartBtInt", "30"],

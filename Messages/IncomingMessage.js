@@ -1,3 +1,5 @@
+var _ = require('lodash');
+
 var Message = require("./Message");
 var map = require("../map");
 var SOH = String.fromCharCode(1);
@@ -19,8 +21,10 @@ function IncomingMessage(raw) {
 
 	this.data = [];
 
-	items.forEach(function (item) {
+	_.forEach(items, function(item){
+
 		var pair = item.split("=");
+		
 		this.data.push([map.getField(pair[0]), pair[1]]);
 	}.bind(this));
 }
