@@ -2,7 +2,9 @@ An implementation of the [FIX protocol (Financial Information Exchange)](http://
 
 Forked from [nodefix by falconair](https://github.com/falconair/nodefix)
 
-Currently the implementation is pre-beta.
+**Currently the implementation is pre-beta.**
+
+nodefix is an initiator implementation of the FIX protocol. There is no current plans for an acceptor implementation at the moment. Current expectations are to meet minimum client functionality and then release as 1.0 onto `npm`.
 
 
 Install
