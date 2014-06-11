@@ -1,43 +1,7 @@
+var moment = require('moment');
+
 exports.getUTCTimeStamp = function (datetime) {
-	
-	var timestamp = datetime || new Date();
-
-	var year = timestamp.getUTCFullYear();
-	var month = timestamp.getUTCMonth() + 1;
-	var day = timestamp.getUTCDate();
-	var hours = timestamp.getUTCHours();
-	var minutes = timestamp.getUTCMinutes();
-	var seconds = timestamp.getUTCSeconds();
-	var millis = timestamp.getUTCMilliseconds();
-
-	if (month < 10)
-	{
-		month = '0' + month;
-	}
-
-	if (day < 10)
-	{
-		day = '0' + day;
-	}
-
-	if (hours < 10)
-	{
-		hours = '0' + hours;
-	}
-
-	if (minutes < 10)
-	{
-		minutes = '0' + minutes;
-	}
-
-	if (seconds < 10)
-	{
-		seconds = '0' + seconds;
-	}
-
-	millis = millis < 10 ? '00' + millis : '0' + millis;
-
-	return [year, month, day, '-' , hours, ':' , minutes, ':' , seconds, '.' , millis].join('');
+	return moment(datetime||new Date).utc().format("YYYYMMDD-HH:mm:ss.SSS")
 };
 
 exports.getCheckSum = function (str) {

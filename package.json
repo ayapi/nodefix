@@ -9,8 +9,9 @@
     "handlers": "./handlers"
   },
   "dependencies": {
-    "pipe": "~1.0.0",
-    "lodash": "~2.4.1"
+    "lodash": "~2.4.1",
+    "moment": "^2.6.0",
+    "pipe": "~1.0.0"
   },
   "engines": {
     "node": ">=0.10.26"
