@@ -1101,7 +1101,17 @@ var fields = exports.fields = {
 	"5209": "RecoveryHigh",
 	"5210": "RecoveryLow",
 	"5211": "RecoverytelegramDate",
-	"5212": "RecoverytelegramTime"
+	"5212": "RecoverytelegramTime",
+
+	"16470": "LotSizeOption",
+	"16552": "ExchTickSize",
+	"16554": "ExchPointValue",
+	"18200": "GatewayStatusReqId",
+	"18201": "NoGatewayStatus",
+	"18202": "GatewayStatus",
+	"18203": "ExchangeGateway",
+	"18204": "SubExchangeGateway",
+	"20009": "NodeID"
 };
 
 exports.keys = {
@@ -2087,7 +2097,16 @@ exports.keys = {
 	"RecoveryHigh": "5209",
 	"RecoveryLow": "5210",
 	"RecoverytelegramDate": "5211",
-	"RecoverytelegramTime": "5212"
+	"RecoverytelegramTime": "5212",
+	"LotSizeOption": "16470",
+	"ExchTickSize": "16552",
+	"ExchPointValue": "16554",
+	"GatewayStatusReqId": "18200",
+	"NoGatewayStatus": "18201",
+	"GatewayStatus": "18202",
+	"ExchangeGateway": "18203",
+	"SubExchangeGateway": "18204",
+	"NodeID": "20009"
 };
 
 var values = exports.values = {
@@ -2140,7 +2159,9 @@ var values = exports.values = {
 		"j": "Business Message Reject",
 		"k": "Bid Request",
 		"l": "Bid Response",
-		"m": "List Strike Price"
+		"m": "List Strike Price",
+		"UAR": "Route Status Request",
+		"UAT": "Route Status"
 	},
 	// 263
 	"SubscriptionRequestType": {
