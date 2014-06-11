@@ -73,9 +73,8 @@ Message.prototype.getRepeating = function (keyField, fields) {
 	else
 	{
 		_.forEach(fields, function(field){
-			
 			data[field] = this.get(field);
-		});
+		}, this);
 	}
 
 	_.forEach(keys, function(key, index){
