@@ -1002,6 +1002,11 @@ var fields = exports.fields = {
 	"955": "LegContractSettlMonth",
 	"956": "LegInterestAccrualDate",
 
+	"7020": "ClearingMember",
+	"7021":	"LegClearingMember",
+	"7022":	"AllocClearingMember",
+	"7023": "LegAllocClearingMember",
+
 	// FXCM Fields
 	"1094": "PegPriceType",
 	"1385": "ContingencyType",
@@ -2056,6 +2061,10 @@ exports.keys = {
 	"Nested3PartySubIDType": "954",
 	"LegContractSettlMonth": "955",
 	"LegInterestAccrualDate": "956",
+	"ClearingMember": "7020",
+	"LegClearingMember": "7021",
+	"AllocClearingMember": "7022",
+	"LegAllocClearingMember": "7023",
 	"TelegramID": "5001",
 	"CurrencyPairs": "5002",
 	"Bid": "5003",
