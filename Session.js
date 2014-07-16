@@ -196,7 +196,7 @@ Session.prototype.startHeartbeat = function (message) {
 			return;
 		}
 
-	}, heartbeatInMs / 2);
+	}.bind(this), heartbeatInMs / 2);
 };
 
 Session.prototype.stopHeartbeat = function () {
