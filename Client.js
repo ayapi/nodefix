@@ -28,8 +28,6 @@ var Session = require("./Session");
 function Client(settings) {
 	
 	this.settings = settings;
-	
-	this.connect();
 }
 
 Client.prototype = new events.EventEmitter();
