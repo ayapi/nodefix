@@ -37,7 +37,7 @@ Session.prototype = new events.EventEmitter();
 
 Session.prototype.outgoing = function (message) {
 
-	if (message.getType() === "Logout")
+	if (message.type === "Logout")
 	{
 		this.isLogoutRequested = true;
 	}
@@ -137,13 +137,10 @@ Session.prototype.incoming = function (message) {
 	// Process logout
 	if (messageType === "Logout")
 	{
-		if (this.isLogoutRequested)
-		{
-			this.emit("fatal");
-		}
-		else
+		if (!this.isLogoutRequested)
 		{
 			console.log("[ERROR] Unexpected server logout:", message.get("Text"));
+			this.emit("fatal");
 		}
 	}
 };
