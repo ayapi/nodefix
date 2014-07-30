@@ -1002,11 +1002,6 @@ var fields = exports.fields = {
 	"955": "LegContractSettlMonth",
 	"956": "LegInterestAccrualDate",
 
-	"7020": "ClearingMember",
-	"7021":	"LegClearingMember",
-	"7022":	"AllocClearingMember",
-	"7023": "LegAllocClearingMember",
-
 	// FXCM Fields
 	"1094": "PegPriceType",
 	"1385": "ContingencyType",
@@ -1111,7 +1106,23 @@ var fields = exports.fields = {
 	"18202": "GatewayStatus",
 	"18203": "ExchangeGateway",
 	"18204": "SubExchangeGateway",
-	"20009": "NodeID"
+	"20009": "NodeID",
+	"7001": "AccountId",
+	"7002": "UserID",
+	"7004": "ClientType",
+	"7006": "UserGroupID",
+	"7008": "AccountStatus",
+	"7010": "Balance",
+	"7011": "BlockedSum",
+	"7012": "Leverage",
+	"7013": "TradingLevel",
+	"7014": "WarningLevel",
+	"7015": "MarginLevel",
+	"7016": "CommisionId",
+	"7020": "CrossInstrumentType",
+	"7021": "CrossInstrumentId",
+	"7022": "CurrencyMinChange",
+	"7023": "Master"
 };
 
 exports.keys = {
@@ -2071,10 +2082,6 @@ exports.keys = {
 	"Nested3PartySubIDType": "954",
 	"LegContractSettlMonth": "955",
 	"LegInterestAccrualDate": "956",
-	"ClearingMember": "7020",
-	"LegClearingMember": "7021",
-	"AllocClearingMember": "7022",
-	"LegAllocClearingMember": "7023",
 	"TelegramID": "5001",
 	"CurrencyPairs": "5002",
 	"Bid": "5003",
@@ -2098,6 +2105,22 @@ exports.keys = {
 	"RecoveryLow": "5210",
 	"RecoverytelegramDate": "5211",
 	"RecoverytelegramTime": "5212",
+	"AccountId": "7001",
+	"UserID": "7002",
+	"ClientType": "7004",
+	"UserGroupID": "7006",
+	"AccountStatus": "7008",
+	"Balance": "7010",
+	"BlockedSum": "7011",
+	"Leverage": "7012",
+	"TradingLevel": "7013",
+	"WarningLevel": "7014",
+	"MarginLevel": "7015",
+	"CommisionId": "7016",
+	"CrossInstrumentType": "7020",
+	"CrossInstrumentId": "7021",
+	"CurrencyMinChange": "7022",
+	"Master": "7023",
 	"LotSizeOption": "16470",
 	"ExchTickSize": "16552",
 	"ExchPointValue": "16554",
@@ -2161,7 +2184,8 @@ var values = exports.values = {
 		"l": "Bid Response",
 		"m": "List Strike Price",
 		"UAR": "Route Status Request",
-		"UAT": "Route Status"
+		"UAT": "Route Status",
+		"UAA": "Account Status"
 	},
 	// 263
 	"SubscriptionRequestType": {
@@ -2198,5 +2222,5 @@ var values = exports.values = {
 		"6": "Other",
 		"7": "Forced user logout by Exchange",
 		"8": "Session shutdown warning"
-	},
+	}
 };
